@@ -13,6 +13,7 @@ var botRouter = require('./routes/apis/bot');
 var ordenRouter = require('./routes/orden');
 var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');
+var api_timbrado_sandbox = require('./routes/apis/api_timbrado_sandbox');
 app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
 app.use(express.json()) // for parsing application/json
@@ -22,6 +23,7 @@ app.use('/mailer',mailerRouter);
 app.use('/orden',ordenRouter);
 app.use('/precios',preciosRouter);
 app.use('/productos',productosRouter, cors(),);
+app.use('/api_timbrado_sandbox',api_timbrado_sandbox)
 app.use('/', (req, res) => res.send('Hello World!'));
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
