@@ -13,7 +13,7 @@ var botRouter = require('./routes/apis/bot');
 var ordenRouter = require('./routes/orden');
 var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');
-  
+app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded

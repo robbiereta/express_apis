@@ -1,39 +1,35 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-var cors = require('cors');
-var corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    exposedHeaders: ['Content-Range,X-Content-Range']
-  }
 
- 
-/*
- * GET
- */
-router.get('/', cors(corsOptions), function(req, res, next) {
-  res.send('respond with a resource');
-  
+/* GET home page. */
+router.get("/", function (req, res, next) {
+  res.render("index", { title: "Express" });
 });
 
-/*
- * GET
- */
-router.get('/:id', productosController.show);
+router.post("/", function (req, res, next) {
+  var axios = require("axios");
+  var data = req.body;
+  console.log(req.body);
 
-/*
- * POST
- */
-router.post('/', productosController.create);
+  var config = {
+    method: "post",
+    url: "https://api.facturify.com/api/v1/factura",
+    headers: {
+      Authorization:
+        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmZhY3R1cmlmeS5jb21cL2FwaVwvdjFcL2F1dGgiLCJpYXQiOjE2MzI2OTUwMDUsImV4cCI6MTYzMjc4MTQwNSwibmJmIjoxNjMyNjk1MDA1LCJqdGkiOiJjRkRKRzF2aVl2d0ExTkNRIiwic3ViIjo4MzM0NCwicHJ2IjoiMGE1YjkwMDBkMzRhMTM5NjExOGU1NDgzNDJlYzQ0MDE2ZjA4YzMzMSJ9.jooxNPOshcisYmrgdBSf-I5b2CeJG-7a3XNWJNeGikYnkjzp-0u_ew84HutYgt9tD8LxPl2gOAwjN4Kn_Bc9t",
+      "Content-Type": "application/json"
+    },
+    data: data
+  };
 
-/*
- * PUT
- */
-router.put('/:id', productosController.update);
-
-/*
- * DELETE
- */
-router.delete('/:id', productosController.remove);
+  axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  res.send("solicitud exitosa post");
+});
 
 module.exports = router;
