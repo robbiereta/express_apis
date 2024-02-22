@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="B" Folio="1985" Fecha="2024-02-19T13:19:06" Sello="TqxqmOaz6gqgrTxprHroL0onW/GukNsD04ZFXcuy9sq4UWFJpMFJ/s9QGejTjvck1AKe17Fw+5Eb5Lkuel7FKWMSpQMuP3vArDxoRxmxgbnDfiqPRZuV059GmZUN1i2wjpiUzzH4Ak3CLnaEVpm0Pbk1+iwF3CXwBsqcInm8m1QZvWpQda99ZTloVLjndGTe520O2gy9s4H3I7Fu2QuYP1nXyJugWm8B+BJSamqGdR1wWyc8gv+7QHkU8HAx56pU5bRVq2i5wh1d23cG3KsdWzNzBTHyvXTNGEG5k8JgxqK2b9hHKEV9P86ilemS0yJ0TfOPuq6ypWnWOO6ikssv2A==" FormaPago="03" NoCertificado="00001000000518957976" Certificado="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" SubTotal="8479.77" Descuento="668.21" Moneda="MXN" Total="9061.41" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="38090">
+  <cfdi:Emisor Rfc="GUPH910305925" Nombre="HENRRY AURELIO GUTIERREZ PEREZ" RegimenFiscal="612" />
+  <cfdi:Receptor Rfc="RERR6008226N5" Nombre="ROBERTO RETA RESENDEZ" DomicilioFiscalReceptor="87000" RegimenFiscalReceptor="612" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="EL-2941" Cantidad="10.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AHORCADOR DE CLUTCH CON CABEZA HEXAGONAL ELPRA PREMIUM (10PZAS)" ValorUnitario="24.8836" Importe="248.8360" Descuento="19.6083" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="229.2277" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="36.6764" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="EL-5951" Cantidad="3.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARBOL DE LEVAS ITK 250Z-2021 ELPRA PREMIUM" ValorUnitario="128.1711" Importe="384.5133" Descuento="30.2997" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="354.2136" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="56.6742" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="EL-5057" Cantidad="10.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BALATA DELANTERA ITK ATV150 ELPRA PREMIUM" ValorUnitario="21.8000" Importe="218.0000" Descuento="17.1784" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.8216" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.1315" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171504" NoIdentificacion="BM-0050V" Cantidad="30.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BALERO 6202 ZZ BONHOEFFER" ValorUnitario="19.8000" Importe="594.0000" Descuento="46.8072" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="547.1928" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="87.5508" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="EL-6127" Cantidad="2.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA TRASERA ITK 125Z ELPRA PREMIUM" ValorUnitario="98.8000" Importe="197.6000" Descuento="15.5709" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="182.0291" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="29.1247" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="EL-6130" Cantidad="1.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA TRASERA ITK DM250 ELPRA PREMIUM" ValorUnitario="92.9000" Importe="92.9000" Descuento="7.3205" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="85.5795" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="13.6927" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="U4-0303" Cantidad="25.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA ELPRA PREMIUM 275/300-21 TR4 (CON NOM)" ValorUnitario="46.4550" Importe="1161.3750" Descuento="91.5164" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1069.8586" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="171.1774" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171504" NoIdentificacion="EL-2541" Cantidad="6.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CLAXON 12V 1.5A UNIVERSAL ELPRA PREMIUM" ValorUnitario="32.9000" Importe="197.4000" Descuento="15.5551" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="181.8449" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="29.0952" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31261501" NoIdentificacion="EL-5919" Cantidad="2.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CUBIERTA DE FARO ITK 250Z 2014-2017 ROJO CON NEGRO ELPRA PREMIUM" ValorUnitario="228.0000" Importe="456.0000" Descuento="35.9328" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="420.0672" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="67.2108" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="EL-4252" Cantidad="6.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ENGRANE DELANTERO 16T ITK DM200, RC200, TX200, FT250 ELPRA PREMIUM" ValorUnitario="22.7079" Importe="136.2474" Descuento="10.7363" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="125.5111" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="20.0818" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="EL-6074" Cantidad="2.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ENGRANE TRAS-DELAN C/CADENA ACERO &amp;quot;H&amp;quot; 41T-13T 520H-108H ITK VORT-X200-2022 ELPRA PREMIUM (KIT)" ValorUnitario="299.0000" Importe="598.0000" Descuento="47.1224" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="550.8776" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="88.1404" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171504" NoIdentificacion="EL-4247" Cantidad="4.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ENGRANE TRAS-DELAN C/CADENA ACERO &amp;quot;H&amp;quot; 428HX128, 15T-46T ITK DM200 2014-2018 ELPRA PREMIUM" ValorUnitario="206.0000" Importe="824.0000" Descuento="64.9312" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="759.0688" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="121.4510" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="EL-6081" Cantidad="4.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ENGRANE TRAS-DELAN C/CADENA ACERO &amp;quot;H&amp;quot; 50T-15T 428H-130L CROSSMAX 250 ELPRA PREMIUM (KIT)" ValorUnitario="229.0000" Importe="916.0000" Descuento="72.1808" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="843.8192" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.0111" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161513" NoIdentificacion="EL-0424" Cantidad="6.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE COMBUSTIBLE C/IMAN (10 PZAS) ORIG ELPRA PREMIUM REFORZ (V)" ValorUnitario="59.8000" Importe="358.8000" Descuento="28.2734" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="330.5266" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="52.8843" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="39112501" NoIdentificacion="EL-1038" Cantidad="10.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FOCO DIRECCIONAL LUZ TRANSPARENTE ELPRA PREMIUM (KIT 10PZAS)" ValorUnitario="24.8000" Importe="248.0000" Descuento="19.5424" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="228.4576" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="36.5532" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="EL-0116" Cantidad="4.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE ARRANQUE ITK AT110 ELPRA PREMIUM" ValorUnitario="52.8000" Importe="211.2000" Descuento="16.6426" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="194.5574" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="31.1292" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="EL-4780" Cantidad="3.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE ARRANQUE ITK DM200, KURAZAI 150 ELPRA PREMIUM" ValorUnitario="84.8000" Importe="254.4000" Descuento="20.0467" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="234.3533" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="37.4965" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="EL-5938" Cantidad="2.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE FRENO TRASERO ITK 250Z-2021 ELPRA PREMIUM" ValorUnitario="96.9000" Importe="193.8000" Descuento="15.2714" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="178.5286" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="28.5646" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141501" NoIdentificacion="EL-6149" Cantidad="2.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA DELAN NEGRO/AZUL ITK 125Z 2019-2022 ELPRA PREMIUM" ValorUnitario="159.8000" Importe="319.6000" Descuento="25.1845" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="294.4155" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="47.1065" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141501" NoIdentificacion="EL-6145" Cantidad="3.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA DELAN NEGRO/ROJO ITK FT150G, FT150 NEGRA ELPRA PREMIUM" ValorUnitario="125.8000" Importe="377.4000" Descuento="29.7391" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="347.6609" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="55.6257" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31261501" NoIdentificacion="EL-5918" Cantidad="3.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA TRASERA ITK DM150 ROJA:2018-2021 ELPRA PREMIUM" ValorUnitario="98.0000" Importe="294.0000" Descuento="23.1672" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="270.8328" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="43.3332" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172408" NoIdentificacion="EL-4612" Cantidad="3.00" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TAPON DE TANQUE DE GASOLINA CON LLAVE H/CGL125 TOOL ELPRA PREMIUM" ValorUnitario="65.9000" Importe="197.7000" Descuento="15.5788" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="182.1212" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="29.1394" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1249.85">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="7811.57" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1249.85" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="A318C2F6-FEF9-4E28-926C-B37C5AEDC1A0" FechaTimbrado="2024-02-19T13:19:13" RfcProvCertif="SFE0807172W8" SelloCFD="TqxqmOaz6gqgrTxprHroL0onW/GukNsD04ZFXcuy9sq4UWFJpMFJ/s9QGejTjvck1AKe17Fw+5Eb5Lkuel7FKWMSpQMuP3vArDxoRxmxgbnDfiqPRZuV059GmZUN1i2wjpiUzzH4Ak3CLnaEVpm0Pbk1+iwF3CXwBsqcInm8m1QZvWpQda99ZTloVLjndGTe520O2gy9s4H3I7Fu2QuYP1nXyJugWm8B+BJSamqGdR1wWyc8gv+7QHkU8HAx56pU5bRVq2i5wh1d23cG3KsdWzNzBTHyvXTNGEG5k8JgxqK2b9hHKEV9P86ilemS0yJ0TfOPuq6ypWnWOO6ikssv2A==" NoCertificadoSAT="00001000000505619865" SelloSAT="QSBSuc9L8L4uNLla6x2mDlH2RgWzg+N6qMx7mXHNRUu17w2uJxycY9F+aUVKhSDcrZo8sHGzlMxpkDL8X7RQx0IG6JdAcFIwSGOJ90lw2Rlkd/q0E/3hE0MO4SSo4R6DpP57u23jPqIdANduN59gpalBRbk95sDdcpOjKmpucRh3t5q3WT9RmUohyYz6ADBx8s9wHhcQPcUktbVAXO7UTq3+zb2m7vfWw6xh+O/quJD4WLE/D8ST/U4RymBULn1gezme4XdHlih/ku2Aat/Z8Dv831Xb3oW384Q/D4Ib3HuAK0OoATRB7+e2BVfjsZm6AU4HgIyzR6ni1c38ug6P5w==" /></cfdi:Complemento></cfdi:Comprobante>
+

@@ -9,12 +9,13 @@
   "private": false,
   "scripts": {
     "start": "nodemon app.js",
-    "build":"node app.js",
+    "build": "node app.js",
     "frontend": " cd ./admin &&  npm run dev",
     "poststart": "concurrently \"npm run build\" \"npm run frontend\""
   },
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cfdi-to-json": "^2.2.0",
     "compression": "^1.7.4",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
