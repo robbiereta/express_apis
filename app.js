@@ -4,7 +4,7 @@ var path = require('path');
 var logger = require('morgan');
 var cors = require('cors');
 var app = express();                                                                                          
-const port = 3000
+const port = 3008
 require('dotenv').config()
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URI,{dbName: 'bvic2'},);
