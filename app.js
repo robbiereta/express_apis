@@ -13,7 +13,7 @@ var botRouter = require('./routes/apis/bot');
 var ordenRouter = require('./routes/orden');
 var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');
-var api_timbrado = require('./routes/apis/api_timbrado');
+var api_timbrado = require('./routes/api_timbrado');
 var facturasBorradorObject = require('./routes/facturasBorradorObjRoutes');
 app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
