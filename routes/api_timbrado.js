@@ -39,7 +39,7 @@ router.post("/factura", function (req, res, next) {
 };
   var fact = req.body;
   console.log(fact);
-  var token = getToken()
+  var token2 = getToken()
  
  
   var config2 = {
@@ -47,7 +47,7 @@ router.post("/factura", function (req, res, next) {
     url: "https://api.facturify.com/api/v1/factura",
     headers: {
       Authorization:
-        "Bearer " +token,
+        "Bearer " +token2,
       "Content-Type": "application/json"
     },
     data: fact
