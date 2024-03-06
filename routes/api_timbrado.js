@@ -39,8 +39,10 @@ router.post("/factura", function (req, res, next) {
 };
   var fact = req.body;
   console.log(fact);
- getToken().then((token) => {
-  var config = {
+  var token = getToken()
+ 
+ 
+  var config2 = {
     method: "post",
     url: "https://api.facturify.com/api/v1/factura",
     headers: {
@@ -51,7 +53,7 @@ router.post("/factura", function (req, res, next) {
     data: fact
   };
 
-  axios(config)
+  axios(config2)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
     })
@@ -59,7 +61,6 @@ router.post("/factura", function (req, res, next) {
       console.log(error);
     });
   res.send("solicitud exitosa post");
-});
 });
 
 module.exports = router;
