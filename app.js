@@ -15,6 +15,7 @@ var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');
 var api_timbrado = require('./routes/api_timbrado');
 var facturasBorradorObject = require('./routes/facturasBorradorObjRoutes');
+var mosRouter=require('./routes/mosRoutes')
 app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
 app.use(express.json()) // for parsing application/json
@@ -27,6 +28,7 @@ app.use('/productos',productosRouter);
 app.use('/api_timbrado',api_timbrado)
 app.use('/cfdi_to_json',cfdi_to_json)
 app.use('/facturas_borradorObject',facturasBorradorObject)
+app.use('/mos',mosRouter)
 app.use('/', (req, res) => res.send('Hello World!'));
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}`)
