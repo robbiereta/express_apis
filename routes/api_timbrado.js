@@ -28,13 +28,14 @@ router.get('/token', (req, res) => {
   axios.request(config1)
   .then((response) => {
     token = JSON.stringify(response.data.jwt.token);
+    console.log(token);
     return token
+  
   })
   .catch((error) => {
     console.log(error);
   });
 
-  res.send(token);
 }); 
 
 
