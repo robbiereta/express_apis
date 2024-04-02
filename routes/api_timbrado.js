@@ -7,12 +7,8 @@ router.get("/", function (req, res, next) {
   res.render("index");
 });
 
+router.post('/token', (req, res) => {
 
-router.post("/factura", function (req, res, next) {
-  var fact = req.body;
-  console.log(fact);
-  var token2 = getToken() 
-  function getToken() {  
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
     "api_secret": process.env.API_SECRET
@@ -31,15 +27,21 @@ router.post("/factura", function (req, res, next) {
   
   axios.request(config1)
   .then((response) => {
-    console.log(JSON.stringify(response.data));
-    var token = response.data.jwt.token
+    let token = JSON.stringify(response.data.jwt.token);
     return token
   })
   .catch((error) => {
     console.log(error);
   });
+
+  res.send(token);
+}); 
+
+
+router.post("/factura", function (req, res, next) {
+  var fact = req.body;
+  console.log(fact);
   
-};
   
   var config2 = {
     method: "post",
