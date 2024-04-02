@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
   res.render("index");
 });
 
-router.get('/token', (req, res) => {
+router.post('/factura', (req, res) => {
 
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
@@ -30,6 +30,27 @@ router.get('/token', (req, res) => {
     token = JSON.stringify(response.data.jwt.token);
     console.log(token);
     res.send(token);
+    var fact = req.body;
+  
+    var config2 = {
+      method: "post",
+      url: "https://api.facturify.com/api/v1/factura",
+      headers: {
+        Authorization:
+          "Bearer " +token,
+        "Content-Type": "application/json"
+      },
+      data: fact
+    };
+  
+    axios(config2)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    res.send("solicitud exitosa post");
   
   })
   .catch((error) => {
@@ -37,31 +58,5 @@ router.get('/token', (req, res) => {
   });
 
 }); 
-
-
-router.post("/factura", function (req, res, next) {
-  var fact = req.body;
-  console.log(fact);
-  
-  var config2 = {
-    method: "post",
-    url: "https://api.facturify.com/api/v1/factura",
-    headers: {
-      Authorization:
-        "Bearer " +token2,
-      "Content-Type": "application/json"
-    },
-    data: fact
-  };
-
-  axios(config2)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-  res.send("solicitud exitosa post");
-});
 
 module.exports = router;
