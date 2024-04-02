@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URI,{dbName: 'bvic3'},);
 var cfdi_to_json = require('./routes/apis/cfdi_to_json');
 var mailerRouter = require('./routes/mailer');
-var botRouter = require('./routes/apis/bot');
+var botRouter = require('./routes/bot');
 var ordenRouter = require('./routes/orden');
 var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');

@@ -9,6 +9,9 @@ router.get("/", function (req, res, next) {
 
 
 router.post("/factura", function (req, res, next) {
+  var fact = req.body;
+  console.log(fact);
+  var token2 = getToken() 
   function getToken() {  
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
@@ -37,11 +40,7 @@ router.post("/factura", function (req, res, next) {
   });
   
 };
-  var fact = req.body;
-  console.log(fact);
-  var token2 = getToken()
- 
- 
+  
   var config2 = {
     method: "post",
     url: "https://api.facturify.com/api/v1/factura",

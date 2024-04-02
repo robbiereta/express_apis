@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../precios_kur_convertidor"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../next_facturaGlobal"
+		}
+	],
+	"settings": {}
+}
