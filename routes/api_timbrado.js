@@ -8,7 +8,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.post('/token', (req, res) => {
-
+  let token = '';
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
     "api_secret": process.env.API_SECRET
@@ -27,7 +27,7 @@ router.post('/token', (req, res) => {
   
   axios.request(config1)
   .then((response) => {
-    let token = JSON.stringify(response.data.jwt.token);
+    token = JSON.stringify(response.data.jwt.token);
     return token
   })
   .catch((error) => {
