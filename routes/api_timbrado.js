@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
   res.render("index");
 });
 
-router.post('/token', (req, res) => {
+router.get('/token', (req, res) => {
   let token = '';
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
