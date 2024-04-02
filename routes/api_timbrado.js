@@ -1,14 +1,14 @@
 var express = require("express");
 var axios = require("axios");
 var router = express.Router();
-
+let token = '';
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index");
 });
 
 router.get('/token', (req, res) => {
-  let token = '';
+
   let keys = JSON.stringify({
     "api_key": process.env.API_KEY,
     "api_secret": process.env.API_SECRET
@@ -29,7 +29,7 @@ router.get('/token', (req, res) => {
   .then((response) => {
     token = JSON.stringify(response.data.jwt.token);
     console.log(token);
-    return token
+    res.send(token);
   
   })
   .catch((error) => {
@@ -42,7 +42,6 @@ router.get('/token', (req, res) => {
 router.post("/factura", function (req, res, next) {
   var fact = req.body;
   console.log(fact);
-  
   
   var config2 = {
     method: "post",
