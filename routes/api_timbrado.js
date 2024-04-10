@@ -40,7 +40,8 @@ router.get('/token', (req, res) => {
 
 
 router.post("/factura", function (req, res, next) {
-  var fact = req.body;
+  var fact = req.body.fact;
+  let token= req.body.token;
   
   var config2 = {
     method: "post",
