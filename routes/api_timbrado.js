@@ -38,7 +38,16 @@ router.get('/token', (req, res) => {
 
 }); 
 
-router.post
+
+router.post('/confirmaFactura', (req, res) => {
+  try {
+    console.log(JSON.stringify(response.data));
+    res.send("factura creada");	    
+  } catch (error) {
+    console.log(error);
+  }
+
+});
 
 router.post("/factura", function (req, res, next) {
   var fact = req.body.fact;
@@ -58,7 +67,7 @@ router.post("/factura", function (req, res, next) {
   axios(config2)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
-      res.send(JSON.stringify(response.data);
+      res.send("solicitud de factura enviada");
     })
     .catch(function (error) {
       console.log(error)
