@@ -61,8 +61,8 @@ router.post("/factura", function (req, res, next) {
       res.send(JSON.stringify(response.data);
     })
     .catch(function (error) {
-      console.log(error);
-      res.send((error)
+      console.log(error)
+      res.send(error)
     });
 
 });
