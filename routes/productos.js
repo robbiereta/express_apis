@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const productosController = require('../controllers/productosController.js');
-
+import * as multer from 'multer';
+import MulterGoogleCloudStorage from 'multer-cloud-storage';
 /*
  * MIDDLEWARE
  */
@@ -43,6 +44,17 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   productosController.show(req, res);
 });
+
+
+const uploadHandler = multer({
+  storage: new MulterGoogleCloudStorage()
+});
+
+router.post('/upload', uploadHandler.any(), (req, res) => {
+    console.log(req.files);
+    res.json(req.files);
+});
+
 
 /*
  * POST
