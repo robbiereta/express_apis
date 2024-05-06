@@ -13,6 +13,8 @@ var botRouter = require('./routes/bot');
 var ordenRouter = require('./routes/orden');
 var preciosRouter = require('./routes/precios');
 var productosRouter = require('./routes/productosRoutes');
+var inventarioRouter = require('./routes/inventarioRoutes');
+var notas_ventaRouter = require('./routes/notas_ventaRoutes');
 var api_timbrado = require('./routes/api_timbrado');
 var facturasBorradorObject = require('./routes/facturasBorradorObjRoutes');
 var mosRouter=require('./routes/mosRoutes')
@@ -25,6 +27,8 @@ app.use('/mailer',mailerRouter);
 app.use('/orden',ordenRouter);
 app.use('/precios',preciosRouter);
 app.use('/productos',productosRouter);
+app.use('/inventario',inventarioRouter)
+app.use('/notas_venta',notas_ventaRouter)
 app.use('/api_timbrado',api_timbrado)
 app.use('/cfdi_to_json',cfdi_to_json)
 app.use('/facturas_borradorObject',facturasBorradorObject)
