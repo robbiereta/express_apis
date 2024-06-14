@@ -1,0 +1,19 @@
+{
+  "name": "cfdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cfdi/xml": "^4.0.13",
+    "cfdi40": "^3.3.6"
+  }
+}

@@ -10,6 +10,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "build": "node app.js",
+    "cfdi":"node ./cfdi/index.js",
     "frontend": " cd ./admin &&  npm run dev",
     "poststart": "concurrently \"npm run build\" \"npm run frontend\""
   },
