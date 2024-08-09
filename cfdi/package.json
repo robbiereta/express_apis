@@ -8,12 +8,18 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon cfdi.js",
+    "createXML":"nodemon cfdixml_creator.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alexotano/cfdi-sat": "^2.2.0",
+    "@cfdi/csd": "^0.0.20",
     "@cfdi/xml": "^4.0.13",
-    "cfdi40": "^3.3.6"
+    "@nodecfdi/credentials": "^2.0.3",
+    "@signati/saxon": "^0.0.4",
+    "cfdi40": "^3.3.6",
+    "xslt-processor": "^3.0.0"
   }
 }

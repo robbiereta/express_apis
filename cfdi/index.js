@@ -3,7 +3,7 @@
 import { 
     CFDI, Emisor
   } from '@cfdi/xml';
-  
+ 
   const xslt = 'http://www.sat.gob.mx/sitio_internet/cfd/4/cadenaoriginal_4_0/cadenaoriginal_4_0.xslt';
   
   
@@ -36,10 +36,10 @@ import {
   });
   cfd.emisor(emisor);
 
-const key = './lib/k.key.pem';
-const cer = './lib/c.cer.pem';
+const key = './lib/EKU9003173C9_202305172235320/CSD/EKU9003173C9.key.pem';
+const cer = './lib/EKU9003173C9_202305172235320/CSD/EKU9003173C9.cer.pem';
 // await cfd.certificar(cer);
-// await cfd.sellar(key, '19032017');
+//  await cfd.sellar(key, '12345678a');
 const xml = await cfd.getXmlCdfi();
 
 console.log(xml)

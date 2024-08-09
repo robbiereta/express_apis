@@ -1,0 +1,49 @@
+{
+
+ "type": "module",
+
+  "author": "Alex Otano",
+  "bugs": {
+    "url": "https://github.com/ALEXOTANO/cfdiSAT/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "jxon": "^2.0.0-beta.5",
+    "xsltproc": "^0.0.3"
+  },
+  "deprecated": false,
+  "description": "Libreria para la generación y sellado de XML para facturación electrónica 4.0 en México (SAT)",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "homepage": "https://github.com/ALEXOTANO/cfdiSAT#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@alexotano/cfdi-sat",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALEXOTANO/cfdiSAT.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "2.2.0",
+  "keywords": [
+    "cfdi",
+    "version",
+    "cfdi 4.0",
+    "Carta Porte 3",
+    "SAT Mexico",
+    "NodeJS",
+    "XML",
+    "facturacion",
+    "complementos pago"
+  ]
+}
