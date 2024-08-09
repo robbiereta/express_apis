@@ -18,6 +18,7 @@ var notas_ventaRouter = require('./routes/notas_ventaRoutes');
 var api_timbrado = require('./routes/api_timbrado');
 var facturasBorradorObject = require('./routes/facturasBorradorObjRoutes');
 var mosRouter=require('./routes/mosRoutes')
+var empleadosRouter=require('./routes/empleadoRoutes')
 app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
 app.use(express.json()) // for parsing application/json
@@ -33,6 +34,7 @@ app.use('/api_timbrado',api_timbrado)
 app.use('/cfdi_to_json',cfdi_to_json)
 app.use('/facturas_borradorObject',facturasBorradorObject)
 app.use('/mos',mosRouter)
+app.use('/empleado',empleadosRouter)
 app.use('/', (req, res) => res.send('Hello World!'));
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}`)
