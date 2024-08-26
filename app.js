@@ -18,7 +18,7 @@ var notas_ventaRouter = require('./routes/notas_ventaRoutes');
 var api_timbrado = require('./routes/api_timbrado');
 var facturasBorradorObject = require('./routes/facturasBorradorObjRoutes');
 var mosRouter=require('./routes/mosRoutes')
-var empleadosRouter=require('./routes/empleadoRoutes')
+var empleadosRouter=require('./routes/empleadosRoutes')
 app.use(cors());
 app.options('/*', cors()) // enable pre-flight request for DELETE request
 app.use(express.json()) // for parsing application/json
