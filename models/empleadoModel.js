@@ -123,7 +123,6 @@ var datosNominaSchema = new Schema({
 var empleadoSchema = new Schema({
 	'nombre' : String,
 	'patron' : String,
-	'datosNomina' : datosNominaSchema
 });
 
 
