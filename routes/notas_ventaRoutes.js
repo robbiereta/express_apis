@@ -7,6 +7,8 @@ var notas_ventaController = require('../controllers/notas_ventaController.js');
  */
 router.get('/', notas_ventaController.list);
 
+router.get('/last',notas_ventaController.list_last);
+
 /*
  * GET
  */

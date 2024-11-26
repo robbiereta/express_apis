@@ -23,6 +23,20 @@ module.exports = {
         });
     },
 
+
+    list_last: function (req, res) {
+        Notas_ventaModel.find().sort({ _id: -1 }).limit(1).exec(function (err, notas_ventas) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting notas_venta.',
+                    error: err
+                });
+            }
+        })
+
+            return res.json(notas_ventas);
+    },
+
     /**
      * notas_ventaController.show()
      */
