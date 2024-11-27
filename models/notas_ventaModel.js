@@ -6,7 +6,7 @@ var notas_ventaSchema = new Schema({
 	'fecha' : String,
 	'cliente' : String,
 	'lineas_venta' : Array,
-	'total:' : String,
+	'total:' : Number,
 	'estatus' : String,
 	'anticipo' : Number,
 	'observaciones' : String

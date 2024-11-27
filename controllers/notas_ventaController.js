@@ -70,6 +70,7 @@ module.exports = {
 			fecha : req.body.fecha,
 			cliente : req.body.cliente,
 			lineas_venta : req.body.lineas_venta,
+            total:req.body.total,
 			estatus : req.body.estatus,
 			anticipo : req.body.anticipo,
 			observaciones : req.body.observaciones
