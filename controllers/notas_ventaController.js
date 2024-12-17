@@ -41,9 +41,9 @@ module.exports = {
      * notas_ventaController.show()
      */
     show: function (req, res) {
-        var id = req.params.id;
+        var folio = req.params.folio;
 
-        Notas_ventaModel.findOne({_id: id}, function (err, notas_venta) {
+        Notas_ventaModel.findOne({folio_venta: folio}, function (err, notas_venta) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when getting notas_venta.',
