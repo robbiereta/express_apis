@@ -6,7 +6,7 @@ var cors = require('cors');
 var app = express();                                                                                          
 require('dotenv').config()
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URI,{dbName: 'bvic3'},);
+mongoose.connect(process.env.MONGO_URI,{dbName: 'bvic_prod'},);
 var cfdi_to_json = require('./routes/apis/cfdi_to_json');
 var mailerRouter = require('./routes/mailer');
 var botRouter = require('./routes/bot');
