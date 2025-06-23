@@ -1,4 +1,5 @@
 var Notas_ventaModel = require('../models/notas_ventaModel.js');
+const Folio = require('../models/Folio');
 
 /**
  * notas_ventaController.js
@@ -64,12 +65,15 @@ module.exports = {
     /**
      * notas_ventaController.create()
      */
-    create: function (req, res) {
+    
+    create: async function (req, res) {
+        var folio = await obtenerSiguienteFolio();
         var notas_venta = new Notas_ventaModel({
-			folio_venta : req.body.folio_venta,
-			fecha : req.body.fecha,
+			cliente:req.body.cliente,
+            folio_venta : folio,
+			fecha : Date.now().toLocaleString(),
 			cliente : req.body.cliente,
-			lineas_venta : req.body.lineas_venta,
+            lineas_venta : req.body.lineas_venta || [],
             total:req.body.total,
 			estatus : req.body.estatus,
 			anticipo : req.body.anticipo,
@@ -147,3 +151,14 @@ module.exports = {
         });
     }
 };
+
+async function obtenerSiguienteFolio() {
+  let folio = await Folio.findOne();
+  if (!folio) {
+    folio = new Folio({ ultimoFolio: 1 });
+  } else {
+    folio.ultimoFolio += 1;
+  }
+  await folio.save();
+  return folio.ultimoFolio;
+}
