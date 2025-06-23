@@ -162,3 +162,4 @@ async function obtenerSiguienteFolio() {
   await folio.save();
   return folio.ultimoFolio;
 }
+
